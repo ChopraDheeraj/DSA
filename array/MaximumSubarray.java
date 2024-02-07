@@ -1,3 +1,4 @@
+//brute force for maximum subarray
 import java.util.*;
 
 public class MaximumSubarray{
