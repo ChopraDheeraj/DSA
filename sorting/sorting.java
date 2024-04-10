@@ -3,7 +3,7 @@ import java.util.*;
 //bubble sort in descending order
 
 public class sorting{
-    /* 
+    
     public static void Bubble(int arr[]){
         for(int turns=0; turns<arr.length; turns++){
             for(int j=0; j<arr.length-1-turns; j++){
@@ -16,7 +16,7 @@ public class sorting{
             }
         }
     }
-    */
+
 
     
         public static void printArr(int arr[]){
