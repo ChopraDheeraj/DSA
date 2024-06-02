@@ -2,14 +2,29 @@ import java.util.*;
 
 public class practice{
 
-    public static void main(String args[]){
-        String fruit[]={"apple","mango","banana"};
-        String largest=fruit[0];
-        for(int i=0; i<fruit.length; i++){
-            if(largest.compareTo(fruit[i])<0){
-                largest=fruit[i];
+    public static int hello(int num[], int key){
+        int start=1;
+        int end=num.length;
+        while(end>=start){
+            //mid
+            int mid=(start+end)/2;
+            if(num[mid]==key){
+                return mid;
+            }
+            
+            if(num[mid]>key){
+                end=mid-1;
+            }
+            else{
+                start=mid+1;
             }
         }
-        System.out.println(largest);        
+        return -1;
+    }
+
+    public static void main(String args[]){
+        int num[]={2,4,6,8,10};
+        int key=6;
+        System.out.println(hello(num, key));
     }
 }
