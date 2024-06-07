@@ -6,9 +6,8 @@ public class Factorial{
         if(n==0){
             return 1;
         }
-        int fnm1=Factorial(n-1);
-        int fac=n*Factorial(n-1);
-        return fac;
+        int fnm1=Factorial(n-1)*n;
+        return fnm1;
     }
 
     public static void main(String args[]){
