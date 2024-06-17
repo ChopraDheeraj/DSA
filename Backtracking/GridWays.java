@@ -13,8 +13,7 @@ public class GridWays{
         //kaam
         
         int totalWays = printGrid(Grid,x+1,y,n)+printGrid(Grid,x,y+1,n);
-        return totalWays;
-        
+        return totalWays;        
     }
 
     public static void main(String args[]){
