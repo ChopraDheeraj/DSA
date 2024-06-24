@@ -1,3 +1,4 @@
+//recursive search
 import java.util.*;
 
 public class Search2 {
@@ -128,6 +129,7 @@ public class Search2 {
         }
         return idx + 1;
     }
+    
     public int recSearch(int key){
         return helper(head, key);
     }
