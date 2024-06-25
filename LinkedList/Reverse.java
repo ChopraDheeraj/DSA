@@ -83,7 +83,7 @@ public class Reverse{
             prev = curr;
             curr = next;
         }
-        head = prev;
+        head = prev;  //4 3 2 1 curr = null
 
     }
     
