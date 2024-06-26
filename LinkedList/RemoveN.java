@@ -3,7 +3,7 @@
 import java.util.*;
 
 
-public class FindN{
+public class RemoveN{
 
     public static class Node{
         int data;
@@ -102,7 +102,7 @@ public class FindN{
 
 
     public static void main(String args[]){
-        FindN ll = new FindN();
+        RemoveN ll = new RemoveN();
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(4);
