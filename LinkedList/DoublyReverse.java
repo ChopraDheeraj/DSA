@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class DoublyLL{
+public class DoublyReverse{
     public class Node{
         int data;
         Node next;
@@ -89,18 +89,31 @@ public class DoublyLL{
         return val;
     }
 
+    public void reverse(){
+        Node prev = null;
+        Node curr = head;
+        Node next;
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            curr.prev = next;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
     
     public static void main(String args[]){
-        DoublyLL dll = new DoublyLL();
+        DoublyReverse dll = new DoublyReverse();
         dll.addFirst(3);
         dll.addFirst(2);
         dll.addFirst(1);
         dll.addLast(4);
         dll.print();
-        dll.removeFirst();
+        dll.reverse();
         dll.print();
-        dll.removeLast();
-        dll.print();
-        System.out.print(dll.size);
+        
     }
 }
