@@ -89,7 +89,7 @@ public class Reverse{
     
 
     public static void main(String args[]){
-        Reverse ll = new Reverse();
+        ReverseString ll = new ReverseString();
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(4);
