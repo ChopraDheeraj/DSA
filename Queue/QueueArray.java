@@ -25,7 +25,7 @@ public class QueueArray {
                 System.out.println("Queue is full");
                 return;
             }
-            rear = rear+1;
+            rear++;
             arr[rear] = data;
         }
 
