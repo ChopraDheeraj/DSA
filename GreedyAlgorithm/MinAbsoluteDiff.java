@@ -16,3 +16,5 @@ public class MinAbsoluteDiff {
         System.out.print(res);
     }
 }
+
+//t(n) = nlogn
