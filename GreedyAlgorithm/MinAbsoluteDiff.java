@@ -3,8 +3,8 @@ import java.util.*;
 public class MinAbsoluteDiff {
 
     public static void main(String args[]){
-        int arr1[] = {1,4,7,8};
-        int arr2[] = {2,3,5,6};
+        int arr1[] = {1,2,3};
+        int arr2[] = {2,1,3};
 
         Arrays.sort(arr1);
         Arrays.sort(arr2);
