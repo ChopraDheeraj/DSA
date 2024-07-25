@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class HeightOfTree {
+public class CountNodes {
 
     static class Node{
         int data;
@@ -20,7 +20,7 @@ public class HeightOfTree {
         }
         int lh = height(root.left);
         int rh = height(root.right);
-        return Math.max(lh, rh) + 1;
+        return lh + rh + 1;
     }
 
 
