@@ -4,7 +4,8 @@ public class HeightOfTree {
 
     static class Node{
         int data;
-        Node right, left;
+        Node right 
+        Node left;
         
         public Node(int data){
             this.data = data;
