@@ -3,11 +3,13 @@ import java.util.*;
 public class ReverseArray{
     public static void Reverse(int numbers[]){
         int start=0, end=numbers.length-1;
+        while(start<end){
         int temp=numbers[end];
         numbers[end]=numbers[start];
-        numbers[start]=numbers[end];
+        numbers[start]=temp;
         start++;
         end--;
+        }
 
         
     }
