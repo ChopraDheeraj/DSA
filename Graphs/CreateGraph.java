@@ -45,7 +45,7 @@ public class CreateGraph {
         //2s neighbor
         for(int i=0; i<graph[2].size(); i++){
             Edge e = graph[2].get(i); //src, dest, wt
-            System.out.print(e.dest); //1,3,4
+            System.out.print(e.dest); //1,3,4'
         }
     }
 }
