@@ -1,20 +1,23 @@
 import java.util.*;
 
 public class SubArray{
+    public static int SA(int arr[]){
+        int cs = 0; //0
+        int ms = Integer.MIN_VALUE; //0
 
-    public static void sa(int arr[]){
-        for(int i=0; i<arr.length; i++){
-            for(int j=i; j<arr.length; j++){
-                for(int k=i; k<j; k++){
-                    System.out.print(arr[k]+" ");
-                }
-                System.out.println();
+        for(int i=0; i<arr.length-1; i++){
+            cs = cs + arr[i];
+            ms = Math.max(ms,cs);
+            if(cs<0){
+                cs = 0;
             }
         }
+        return ms;
     }
 
     public static void main(String args[]){
-        int arr[] = {2,4,6,8,10};
-        sa(arr);
+        int arr[]={-2,-3,4,-1,-2,-1,-5,-3};
+        System.out.print(SA(arr));
+        
     }
 }
