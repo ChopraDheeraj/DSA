@@ -16,7 +16,7 @@ public class rangePrime{
         return true;
     }
   
-    public static void primesinRange(int n){
+    /*public static void primesinRange(int n){
         for(int i=2; i<=n; i++){
             if(isPrimerange(i)){
                 System.out.println(i+" ");
@@ -24,8 +24,8 @@ public class rangePrime{
         }
         System.out.println();
     }
+    */
     public static void main(String args[]){
-        primesinRange(20);
-
+        System.out.println(isPrimerange(20));
     }
 }
