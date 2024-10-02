@@ -20,8 +20,8 @@ public class RemoveSpaces{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        String d = removeSpace(s);
-        System.out.print(d);
+        String d1 = removeSpace(s);
+        System.out.print(d1);
         
         
     }
