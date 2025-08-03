@@ -11,7 +11,7 @@ public class AccessModifiers{
 class BankAccount{
     public String username;
     private String password;
-    private void setPassword(String pwd){
+    public void setPassword(String pwd){
         password = pwd;
     }
 }

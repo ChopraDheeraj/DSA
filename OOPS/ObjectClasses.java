@@ -3,7 +3,7 @@
 
 public class ObjectClasses{
     public static void main(String args[]){ //public here is the access specifier
-    Pen p1 = new Pen();  //we also used constructor
+    Pen p1 = new Pen();  //created a pen object p1 using constructor
     p1.setColor("blue");
     System.out.println(p1.color);
     p1.setTip(5);
