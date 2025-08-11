@@ -1,3 +1,5 @@
+//find max in array
+
 import java.util.*;
 
 public class MinMax{

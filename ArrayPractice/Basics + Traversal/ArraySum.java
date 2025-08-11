@@ -1,3 +1,5 @@
+
+//sum of array
 import java.util.*;
 
 public class ArraySum{

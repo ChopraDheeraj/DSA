@@ -1,3 +1,5 @@
+//check if array is sorted
+
 import java.util.*;
 
 public class IsSorted{
