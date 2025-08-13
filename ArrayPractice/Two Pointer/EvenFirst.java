@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public class EvenFirst{
 
     public static void calc(int arr[]){

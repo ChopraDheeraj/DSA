@@ -2,20 +2,21 @@ import java.util.*;
 
 public class practice{
 
-    public static boolean isSorted(int arr[]){
-        int i;
-        for(i=0; i<arr.length-1; i++){
-            if(arr[i] > arr[i+1]){
-                return false;
+    public static void sub(int arr[]){
+        int cs = 0;
+        int ms = Integer.MIN_VALUE;
+        for(int i=0; i<arr.length; i++){
+            cs += arr[i];
+            ms = Math.max(ms,cs);
+            if(cs < 0){
+                cs = 0;
             }
-            
         }
-        return true;
+        System.out.print(ms);
     }
 
     public static void main(String args[]){
-        int arr[] = {1,2,5,6};
-        System.out.print(isSorted(arr));
-    
+        int arr[] = {-2, -3 , 4 , -1, -2, 1 , 5 ,-3};
+        sub(arr);
     }
 }
